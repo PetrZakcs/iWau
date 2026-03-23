@@ -46,7 +46,7 @@ export default function Start() {
         <FadeIn delay={0.5}>
           <div className="mt-12 text-center">
             <a
-              href="https://discord.gg/hra-reality"
+              href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all"

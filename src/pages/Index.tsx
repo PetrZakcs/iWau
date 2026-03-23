@@ -60,7 +60,7 @@ export default function Index() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://discord.gg/hra-reality"
+                  href="https://discord.gg/MGnNWkcqQf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all min-h-[44px]"
@@ -204,7 +204,7 @@ export default function Index() {
               Připraven <span className="neon-text">vstoupit</span>?
             </h2>
             <a
-              href="https://discord.gg/hra-reality"
+              href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all"

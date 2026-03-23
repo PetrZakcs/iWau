@@ -6,7 +6,7 @@ import StarfieldBackground from "./StarfieldBackground";
 
 const navLinks = [
   { to: "/jak-to-funguje", label: "Jak to funguje" },
-  { to: "https://discord.gg/hra-reality", label: "Komunita", external: true },
+  { to: "https://discord.gg/MGnNWkcqQf", label: "Komunita", external: true },
   { to: "/komiksy", label: "Komiksy" },
   { to: "/start", label: "O projektu" },
   { to: "/partneri", label: "Partneři" },
@@ -52,7 +52,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               )
             )}
             <a
-              href="https://discord.gg/hra-reality"
+              href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-3 px-5 py-2 text-sm font-bold font-display bg-primary text-primary-foreground rounded-lg pulse-glow hover:brightness-110 transition-all"
@@ -107,7 +107,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   )
                 )}
                 <a
-                  href="https://discord.gg/hra-reality"
+                  href="https://discord.gg/MGnNWkcqQf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 px-5 py-3 text-sm font-bold font-display text-center bg-primary text-primary-foreground rounded-lg"
