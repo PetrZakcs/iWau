@@ -4,7 +4,7 @@ import FadeIn from "@/components/FadeIn";
 export default function Start() {
   return (
     <div className="min-h-screen">
-      
+
       {/* SEKCE 6 — VIZE, MISE, CÍL */}
       <section className="py-24 flex items-center bg-card/10">
         <div className="section-container max-w-6xl">
@@ -13,7 +13,7 @@ export default function Start() {
               Vize & Mise
             </div>
           </FadeIn>
-          
+
           <div className="grid md:grid-cols-3 gap-8 text-left">
             {/* Box 1 - Vize */}
             <FadeIn delay={0.1}>
@@ -28,7 +28,7 @@ export default function Start() {
                   <li>status = reálný důvod pokračovat</li>
                 </ul>
                 <p className="text-primary font-bold mt-auto pt-6 border-t border-border/50 text-xl leading-relaxed">
-                  Prostředí, který tě přirozeně dostane do pohybu.
+                  Prostředí, které tě přirozeně dostane do pohybu.
                 </p>
               </div>
             </FadeIn>
@@ -39,7 +39,7 @@ export default function Start() {
                 <Compass className="text-primary mb-6" size={40} />
                 <h3 className="font-display text-2xl font-bold mb-6">Mise</h3>
                 <p className="text-muted-foreground mb-4 text-lg">
-                  Pomoci lidem přestat jen sledovat svůj život<br/>
+                  Pomoci lidem přestat jen sledovat svůj život<br />
                   a začít ho reálně žít.
                 </p>
                 <p className="text-muted-foreground mb-4 text-lg mt-auto">Ne teorií.</p>
@@ -89,7 +89,7 @@ export default function Start() {
             </ul>
             <div className="inline-block p-8 glass-card border-primary/30 rounded-3xl w-full sm:w-auto bg-background/60">
               <p className="text-xl sm:text-2xl text-primary font-bold uppercase tracking-widest leading-relaxed">
-                A tohle je moment,<br/>kdy to může vzniknout.
+                A tohle je moment,<br />kdy to může vzniknout.
               </p>
             </div>
           </FadeIn>
@@ -109,16 +109,16 @@ export default function Start() {
               <p>Můžeš:</p>
               <div className="space-y-4 font-medium text-foreground text-lg max-w-md mx-auto">
                 <div className="flex items-center gap-4 bg-background/50 p-4 rounded-xl border border-primary/20">
-                  <ArrowRight className="text-primary shrink-0" size={24} /> 
+                  <ArrowRight className="text-primary shrink-0" size={24} />
                   <span className="text-left w-full">počkat, až to bude hotové</span>
                 </div>
                 <div className="flex items-center gap-4 bg-background/50 p-4 rounded-xl border border-primary/20">
-                  <ArrowRight className="text-primary shrink-0" size={24} /> 
+                  <ArrowRight className="text-primary shrink-0" size={24} />
                   <span className="text-left w-full">nebo být u toho, když to vzniká</span>
                 </div>
               </div>
             </div>
-            
+
             <a
               href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
@@ -165,7 +165,7 @@ export default function Start() {
               <p>Možná jen další krok.</p>
               <p className="text-foreground font-medium pt-6">To zjistíš, až vstoupíš.</p>
             </div>
-            
+
             <a
               href="https://discord.gg/MGnNWkcqQf"
               target="_blank"

@@ -1,18 +1,19 @@
 import { BookOpen, ArrowRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
-import cover1 from "@/assets/comic-cover-1.png";
-import cover2 from "@/assets/comic-cover-2.png";
+import cover1 from "@/assets/comic-cover-1.jpg";
+import cover2 from "@/assets/comic-cover-2.jpg";
 
 const comics = [
   {
     title: "Probuď hráče v sobě",
     desc: "Začíná to nenápadně.\nPocit, že něco nesedí.\nŽe svět, ve kterém žiješ… není úplně skutečný.\n\nTenhle příběh tě neprobudí.",
     bullets: [
-      "Ale může být první trhlina.",
+      "a může být první trhlina",
       "první kontakt se světem Hry Reality",
       "začátek pochopení"
     ],
     img: cover1,
+    pdf: "/docs/komiks-1-probud-hrace.pdf",
   },
   {
     title: "Dr. Wetom: Kód naděje",
@@ -22,6 +23,7 @@ const comics = [
       "první náznaky toho, co se opravdu děje"
     ],
     img: cover2,
+    pdf: "/docs/komiks-2-dr-wetom.pdf",
   },
 ];
 
@@ -37,11 +39,11 @@ export default function Comics() {
           <h1 className="text-3xl sm:text-5xl font-display font-bold mb-8">
             Vstup do světa <span className="neon-text">Hry Reality</span>
           </h1>
-          
+
           <div className="text-lg text-muted-foreground mb-20 space-y-4 max-w-2xl">
             <p className="text-foreground font-medium text-xl">Tohle nejsou jen komiksy.</p>
             <p className="text-primary font-bold">→ Jsou to první portály do světa, který není takový, jak se zdá.</p>
-            <p>Každý příběh ti ukáže jen část.<br/>Nikdy ne celý obraz.</p>
+            <p>Každý příběh ti ukáže jen část.<br />Nikdy ne celý obraz.</p>
             <p className="text-primary font-bold mt-4">→ A právě proto tě to začne táhnout dál.</p>
           </div>
         </FadeIn>
@@ -73,9 +75,14 @@ export default function Comics() {
                       </li>
                     ))}
                   </ul>
-                  <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full">
+                  <a 
+                    href={comic.pdf} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full"
+                  >
                     <BookOpen size={18} />
-                    Otevřít komiks
+                    Otevřít komiks (PDF)
                   </a>
                 </div>
               </div>
@@ -88,7 +95,7 @@ export default function Comics() {
           <div className="mb-8 p-10 glass-card border-primary/20 max-w-3xl">
             <h2 className="text-xl font-display font-bold mb-4 text-primary uppercase tracking-widest">Co se stane potom</h2>
             <div className="space-y-4 text-lg text-muted-foreground">
-              <p>Možná si řekneš, že je to jen příběh.<br/>Ale možná…</p>
+              <p>Možná si řekneš, že je to jen příběh.<br />Ale možná…</p>
               <p className="text-foreground font-medium">→ začneš vidět věci jinak</p>
               <p className="italic pt-2">A právě v tu chvíli začíná hra.</p>
             </div>
@@ -101,7 +108,7 @@ export default function Comics() {
             <h2 className="text-2xl sm:text-3xl font-display font-bold mb-6">KDE TO POKRAČUJE</h2>
             <p className="text-xl text-muted-foreground mb-2">Komiksy nejsou konec.</p>
             <p className="text-xl text-primary font-bold mb-8">→ jsou vstup</p>
-            
+
             <p className="text-muted-foreground mb-4">Pokud chceš jít dál:</p>
             <ul className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 text-foreground font-medium mb-8">
               <li>první signály</li>
@@ -111,7 +118,7 @@ export default function Comics() {
               <li>první hráči</li>
             </ul>
             <p className="text-primary font-bold mb-10">→ všechno pokračuje tady</p>
-            
+
             <a
               href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
