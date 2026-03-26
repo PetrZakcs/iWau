@@ -76,3 +76,5 @@ Pracujeme na první verzi. Přesné datum zatím neoznámíme — ale ti v pre-l
 
 - Web: https://hrareality.cz/
 - Discord: https://discord.gg/MGnNWkcqQf
+
+- vytvořil: Petr Žák, roosteo.cz

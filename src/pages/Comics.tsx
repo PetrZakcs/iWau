@@ -8,7 +8,7 @@ const comics = [
     title: "Probuď hráče v sobě",
     desc: "Začíná to nenápadně.\nPocit, že něco nesedí.\nŽe svět, ve kterém žiješ… není úplně skutečný.\n\nTenhle příběh tě neprobudí.",
     bullets: [
-      "a může být první trhlina",
+      "ale může být první trhlina",
       "první kontakt se světem Hry Reality",
       "začátek pochopení"
     ],
@@ -75,8 +75,8 @@ export default function Comics() {
                       </li>
                     ))}
                   </ul>
-                  <a 
-                    href={comic.pdf} 
+                  <a
+                    href={comic.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full"

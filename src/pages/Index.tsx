@@ -1,7 +1,7 @@
 import { ArrowRight, Target, Globe, Zap, Key, Gift, Rocket, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import FadeIn from "@/components/FadeIn";
-import heroImg from "@/assets/hero-character.png";
+import heroImg from "@/assets/hero-character.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -80,8 +80,8 @@ export default function Index() {
               <img
                 src={heroImg}
                 alt="Dr.Wetom - Hra Reality"
-                className="w-full max-w-md lg:max-w-lg animate-float rounded-2xl relative z-10 drop-shadow-[0_0_30px_hsl(270,100%,65%,0.4)] grayscale"
-                style={{ filter: "drop-shadow(0 0 30px rgba(168, 85, 247, 0.4)) contrast(1.2)" }}
+                className="w-full max-w-md lg:max-w-lg animate-float rounded-2xl relative z-10 drop-shadow-[0_0_30px_hsl(270,100%,65%,0.4)]"
+                style={{ filter: "drop-shadow(0 0 30px rgba(168, 85, 247, 0.4)) contrast(1.1)" }}
                 loading="eager"
               />
             </div>
