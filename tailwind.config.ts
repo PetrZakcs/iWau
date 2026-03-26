@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Orbitron", "sans-serif"],
+        display: ["Chakra Petch", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
       colors: {

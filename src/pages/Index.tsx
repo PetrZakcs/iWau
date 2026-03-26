@@ -10,27 +10,28 @@ import {
 } from "@/components/ui/accordion";
 
 const steps = [
-  { icon: Target, title: "1. Téma", desc: "Vyber si oblast – Zdraví, Finance, Vztahy." },
-  { icon: Globe, title: "2. Výběr Světa", desc: "Vstup do světa, který tě zajímá." },
-  { icon: Zap, title: "3. Výzvy", desc: "5–20 min denní výzvy v reálném životě." },
-  { icon: Key, title: "4. Klíče", desc: "Postupuj a odemykej nové úrovně." },
-  { icon: Gift, title: "5. Mystery Box", desc: "Reálné odměny za splnění." },
-  { icon: Rocket, title: "6. Změň svůj svět", desc: "Transformace reality začíná." },
+  { icon: Target, title: "1. Vyber si směr", desc: "Fyzické & duševní zdraví. Finance. Příroda… Vybereš si oblast, ve které chceš posunout svůj život." },
+  { icon: Globe, title: "2. Vstup do světa", desc: "Každé téma má svůj vlastní „svět“. Vybereš si ten, který tě táhne a zajímá." },
+  { icon: Zap, title: "3. Přijmi výzvu", desc: "Každý den dostaneš krátkou výzvu z reálného života. Žádná teorie. → Jdeš a uděláš ji." },
+  { icon: Key, title: "4. Dokaž to", desc: "Nahraješ důkaz. Fotku. Video. Text. Tvůj progres se stává viditelný — pro tebe i pro ostatní." },
+  { icon: Gift, title: "5. Získej odměnu", desc: "Za každou akci získáváš klíče, odemykáš nové úrovně a otevíráš mystery boxy. Nikdy nevíš, co padne. → A přesně proto chceš další." },
+  { icon: Rocket, title: "6. Posuň se dál", desc: "S každým krokem rosteš. Otevíráš nové možnosti. Získáváš status. Odměny, které využiješ v reálném světě. A začínáš hrát na úplně jiné úrovni." },
 ];
 
 const team = [
-  { name: "Tomáš", role: "Founder", desc: "Autor vize & Ithaca." },
-  { name: "Vítek", role: "Co-founder", desc: "Strategie, values & integrity." },
-  { name: "Marián", role: "Co-founder", desc: "Provozní pilíř." },
-  { name: "Lucie", role: "Co-founder", desc: "Duše projektu & empatie." },
+  { name: "Tomáš", role: "Founder", desc: "Vize, směr a svět, který tahle hra buduje.", quote: "Začal jsem to tvořit ve chvíli, kdy mi došlo, že většina lidí jen sleduje svůj život… místo aby ho opravdu žila.", img: "/tomas.jpg" },
+  { name: "Vítek", role: "Co-founder", desc: "Strategie, systém a rozhodnutí, která drží hru pohromadě.", quote: "Vždycky mě zajímalo, jak nastavit systém tak, aby lidi nejen motivoval… ale skutečně měnil jejich chování.", img: "/vitek.jpg" },
+  { name: "Marián", role: "Co-founder", desc: "Provoz, exekuce a realita každého dne.", quote: "Věděl jsem, že bez změny zůstane vše tak jak je. Tohle je místo, kde se věci opravdu dějí.", img: "/marian.jpg" },
+  { name: "Lucie", role: "Co-founder", desc: "Energie, empatie a spojení s komunitou.", quote: "Každý den vidím, jak moc lidem chybí prostředí, kde můžou růst a být sami sebou. Tohle má být ten prostor.", img: "/lucie.jpg" },
 ];
 
 const faqs = [
-  { q: "Co je Hra Reality?", a: "Příběhový systém výzev v reálném životě. Nejde o mobilní appku – jde o reálné zážitky propojené s komunitou na Discordu." },
-  { q: "Musím platit?", a: "Pre-launch fáze je zcela zdarma. Připojíš se na Discord a budeš mezi prvními, kdo hru testuje." },
-  { q: "Pro koho je to?", a: "Pro každého, kdo cítí, že se chce posunout – bez guru, bez teorie, jen přes zážitek." },
-  { q: "Kdy to startuje?", a: "Testování první verze pro 1000 hráčů začíná v roce 2026." },
-  { q: "Jak se zapojím?", a: "Vstup do pre-launch Discordu, přijmi pravidla komunity a odemkni si přístup do herních kanálů." },
+  { q: "Co se stane, když se připojím?", a: "Dostaneš přístup do uzavřené komunity, kde Hru Reality společně stavíme. Uvidíš první verzi systému, první výzvy a budeš u toho, jak se celý projekt formuje od začátku.\n→ Nejde jen o hraní.\n→ Jde o to být u vzniku." },
+  { q: "Je hra už hotová?", a: "Ne.\nJsme v pre-launch fázi.\nA právě proto hledáme první hráče, kteří chtějí být u toho.\n→ To, co vznikne, bude do velké míry ovlivněné lidmi, kteří přijdou teď." },
+  { q: "Proč bych se měl/a připojit už teď?", a: "Protože první hráči vždy získají nejvíc. Mají přímý vliv na směr projektu, dostávají early přístup k novým věcem a budují si pozici od úplného začátku.\n→ později už jen vstupuješ do hotové hry" },
+  { q: "Co se bude dít v Discordu?", a: "První signály hry a testování systému, sdílení progresu, společné budování hry, komunikace přímo s týmem.\n→ je to kombinace komunity, hry a backstage vývoje" },
+  { q: "Musím být aktivní každý den?", a: "Ne.\nAle čím víc se zapojíš, tím víc z toho můžeš získat.\n→ Hra Reality není o dokonalosti.\n→ Je o pohybu." },
+  { q: "Co když jen chci sledovat?", a: "Můžeš.\nAle pravděpodobně rychle zjistíš, že je lepší hrát." },
 ];
 
 export default function Index() {
@@ -49,15 +50,12 @@ export default function Index() {
                 PRE-LAUNCH
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
-                <span className="sr-only">Hra Reality - osobní rozvoj a systém výzev. </span>
-                Možná svět{" "}
-                <span className="neon-text">nezachráníme.</span>
-                <br />
-                Ale můžeme ho probudit.
+                Staň se jedním z prvních, kdo začne hrát svůj život <span className="neon-text">jinak</span>
               </h1>
-              <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-                <strong>Hra Reality</strong> je unikátní příběhový systém výzev v reálném životě. Gamifikace osobního rozvoje, která tě donutí jednat. Připoj se k naší pre-launch komunitě.
-              </p>
+              <div className="text-lg text-muted-foreground mb-8 max-w-lg space-y-4">
+                <p><strong>Krátké výzvy. Reálný progres. Viditelná změna.</strong></p>
+                <p>Teď budujeme první verzi hry a hledáme 1 000 hráčů, kteří chtějí být u jejího vzniku.</p>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://discord.gg/MGnNWkcqQf"
@@ -66,17 +64,11 @@ export default function Index() {
                   className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all min-h-[44px]"
                 >
                   <ArrowRight size={18} />
-                  Vstoupit do Discordu
+                  Připoj se k naší pre-launch komunitě.
                 </a>
-                <Link
-                  to="/jak-to-funguje"
-                  className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-display text-sm rounded-xl hover:border-primary/50 hover:bg-primary/5 transition-all min-h-[44px]"
-                >
-                  Jak to funguje
-                </Link>
               </div>
               <p className="mt-6 text-xs text-muted-foreground">
-                Pre-launch komunita • První verze pro 1 000 hráčů • Start testování 2026
+                Pre-launch komunita Discord • První verze pro 1 000 hráčů • Start testování 2026
               </p>
             </div>
           </FadeIn>
@@ -87,10 +79,36 @@ export default function Index() {
               <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75 animate-pulse" />
               <img
                 src={heroImg}
-                alt="Hra Reality – herní postava"
-                className="w-full max-w-md lg:max-w-lg animate-float rounded-2xl relative z-10 drop-shadow-[0_0_30px_hsl(270,100%,65%,0.4)]"
+                alt="Dr.Wetom - Hra Reality"
+                className="w-full max-w-md lg:max-w-lg animate-float rounded-2xl relative z-10 drop-shadow-[0_0_30px_hsl(270,100%,65%,0.4)] grayscale"
+                style={{ filter: "drop-shadow(0 0 30px rgba(168, 85, 247, 0.4)) contrast(1.2)" }}
                 loading="eager"
               />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* CO SE STANE PO VSTUPU */}
+      <div className="hud-line" />
+      <section className="py-20 bg-primary/5">
+        <div className="section-container">
+          <FadeIn>
+            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-8 text-center">
+              Co se stane po <span className="neon-text">vstupu?</span>
+            </h2>
+            <div className="max-w-2xl mx-auto text-center space-y-6 text-muted-foreground text-lg">
+              <p>Projdeš krátkým onboardingem (cca 5 minut).<br/>
+              Odemkneš Level 1.<br/>
+              A poprvé uvidíš signály Hry Reality.</p>
+
+              <p>Začneš reagovat.<br/>
+              A postupně získáš přístup k testování nového světa.</p>
+
+              <div className="p-6 glass-card border-primary/30 mt-8 rounded-2xl">
+                <p className="text-foreground font-medium mb-1">První krok ti zabere 5 minut.</p>
+                <p className="text-primary font-bold">Ale může změnit celý tvůj směr.</p>
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -106,10 +124,12 @@ export default function Index() {
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4 text-center">
               Co je to <span className="neon-text">Hra Reality?</span>
             </h2>
-            <div className="max-w-2xl mx-auto text-center space-y-4 text-muted-foreground">
-              <p><strong>Hra Reality</strong> je příběhový systém výzev odehrávající se v reálném životě.</p>
-              <p>Žádná fixace na digitální obrazovky. Žádná zdlouhavá teorie bez praxe. <strong>Hra Reality propojuje gamifikaci s osobním rozvojem</strong> pomocí reálných zážitků a systematického posouvání vlastních limitů.</p>
-              <p>Celý obsah staví na zkušenostech, úkolech od expertů a síle naší komunity.</p>
+            <div className="max-w-2xl mx-auto text-center space-y-4 text-muted-foreground text-lg">
+              <p><strong>Hra Reality je příběhový systém výzev odehrávající se přímo v reálném životě.</strong></p>
+              <p>Žádné nekonečné scrollování. Žádná teorie bez akce. Místo toho plníš výzvy, sdílíš důkazy svého progresu a získáváš status, identitu a odměny za to, co skutečně děláš.</p>
+              <p>Hra Reality propojuje gamifikaci, osobní růst a komunitu do jednoho systému, který ti s každým krokem odemyká víc možností, odměn a prostoru růst.</p>
+              <p>Celý obsah staví na reálných zkušenostech, výzvách inspirovaných experty a síle komunity, která roste společně.</p>
+              <p className="text-foreground font-medium pt-4">Není to něco, co jenom sleduješ. Je to něco, co začneš hrát.</p>
             </div>
           </FadeIn>
         </div>
@@ -142,28 +162,98 @@ export default function Index() {
       <div className="hud-line" />
 
       {/* TÝM */}
-      <section className="py-20">
-        <div className="section-container">
+      <section className="py-20 relative">
+        <div className="section-container max-w-5xl">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-12 text-center">
-              Kdo za tím <span className="neon-text">stojí</span>
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-display font-bold mb-8">
+                Kdo stojí za <span className="neon-text">Hrou Reality</span>
+              </h2>
+              <div className="max-w-2xl mx-auto space-y-4 text-muted-foreground text-lg">
+                <p>Hru Reality netvoří anonymní tým.<br/>Tvoří ji lidé, kteří se rozhodli přestat jen mluvit… a začít tvořit.</p>
+                <p>Začínáme od nuly. Bez investorů. Bez jistoty.<br/>
+                Ale s vizí, že tohle může změnit způsob, jak lidé žijí svůj život.</p>
+              </div>
+            </div>
           </FadeIn>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-8">
             {team.map((person, i) => (
               <FadeIn key={person.name} delay={i * 0.1}>
-                <div className="glass-card-hover p-6 text-center">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 border border-primary/30 mx-auto mb-4 flex items-center justify-center">
-                    <span className="font-display text-primary text-xl font-bold">
-                      {person.name[0]}
-                    </span>
+                <div className="glass-card-hover p-6 flex flex-col items-center sm:items-start text-center sm:text-left gap-6 h-full border border-border/40 bg-card/40">
+                  <div className="w-24 h-24 shrink-0 rounded-2xl bg-secondary border border-primary/20 flex items-center justify-center overflow-hidden relative group">
+                    <div className="absolute inset-0 bg-primary/20 mix-blend-overlay group-hover:bg-transparent transition-colors z-10" />
+                    {person.img ? (
+                      <img src={person.img} alt={person.name} className="w-full h-full object-cover relative z-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+                    ) : (
+                      <span className="font-display text-primary/50 text-4xl font-bold uppercase relative z-0">
+                        {person.name[0]}
+                      </span>
+                    )}
                   </div>
-                  <h3 className="font-display text-sm font-bold">{person.name}</h3>
-                  <p className="text-xs text-primary mb-2">{person.role}</p>
-                  <p className="text-xs text-muted-foreground">{person.desc}</p>
+                  <div className="flex-1 text-left w-full sm:w-auto">
+                    <h3 className="font-display text-xl font-bold text-foreground text-center sm:text-left">{person.name}</h3>
+                    <p className="text-sm font-semibold tracking-wider text-primary mb-3 uppercase text-center sm:text-left">{person.role}</p>
+                    <p className="text-sm text-foreground/80 mb-4 text-center sm:text-left">{person.desc}</p>
+                    <p className="text-sm text-muted-foreground italic border-l-2 border-primary/30 pl-3">„{person.quote}“</p>
+                  </div>
                 </div>
               </FadeIn>
             ))}
+          </div>
+          <FadeIn delay={0.4}>
+            <div className="mt-16 text-center max-w-2xl mx-auto p-8 glass-card border-primary/20">
+              <p className="font-display text-lg mb-2">→ Nejsme jen tým.</p>
+              <p className="font-display text-lg mb-6 text-primary font-bold">→ Jsme první hráči téhle hry.</p>
+              <p className="text-muted-foreground">Pokud tohle čteš, nejsi tu náhodou.<br/>Možná je čas začít hrát taky.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      <div className="hud-line" />
+
+      {/* WHY NOW */}
+      <section className="py-20 bg-background/50">
+        <div className="section-container max-w-4xl">
+          <div className="grid md:grid-cols-2 gap-12">
+            <FadeIn>
+              <h2 className="text-2xl sm:text-3xl font-display font-bold mb-6">
+                Proč vzniká Hra Reality <span className="neon-text">právě teď</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground text-lg">
+                <p>Nikdy jsme neměli víc možností.<br/>A nikdy jsme nebyli víc zahlcení.</p>
+                <p>Scrollujeme. Sledujeme. Konzumujeme.<br/>Ale reálně se nikam neposouváme.</p>
+                <p>Sociální sítě odměňují pozornost. Ne změnu.<br/>Vzdělávání dává informace. Ne akci.</p>
+                <div className="pt-2 text-foreground font-medium">
+                  <p>→ Všichni ví, co dělat.</p>
+                  <p>→ Málokdo to dělá.</p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="glass-card p-8 border-primary/30 rounded-2xl h-full flex flex-col justify-center">
+                <h3 className="text-xl font-display font-bold mb-4 text-primary">
+                  Proč se připojit právě teď
+                </h3>
+                <p className="text-muted-foreground mb-4">Hra je na začátku.<br/>To znamená jediné:</p>
+                <ul className="text-muted-foreground space-y-2 mb-6">
+                  <li>→ můžeš být u toho od prvního dne</li>
+                  <li>→ ovlivnit, jak bude vypadat</li>
+                  <li>→ a získat náskok před ostatními</li>
+                </ul>
+                <p className="text-foreground font-medium mb-2">První hráči vždy získají nejvíc.</p>
+                <p className="text-muted-foreground mb-6">Otázka je, jestli budeš mezi nimi. Můžeš být u toho od začátku. Nebo přijít později… a jen sledovat, jak roste.</p>
+                <a
+                  href="https://discord.gg/MGnNWkcqQf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex justify-center items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all mt-auto"
+                >
+                  <ArrowRight size={18} />
+                  Vstup do discordu
+                </a>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -186,7 +276,7 @@ export default function Index() {
                   <AccordionTrigger className="text-sm font-medium hover:text-primary py-4">
                     {faq.q}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm text-muted-foreground pb-4">
+                  <AccordionContent className="text-sm text-muted-foreground pb-4 whitespace-pre-line leading-relaxed">
                     {faq.a}
                   </AccordionContent>
                 </AccordionItem>
@@ -200,17 +290,20 @@ export default function Index() {
       <section className="py-20">
         <div className="section-container text-center">
           <FadeIn>
-            <h2 className="text-2xl sm:text-3xl font-display font-bold mb-6">
-              Připraven <span className="neon-text">vstoupit</span>?
+            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-8">
+              Jsi připraven začít <span className="neon-text">hrát</span>?
             </h2>
             <a
               href="https://discord.gg/MGnNWkcqQf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all"
+              className="inline-flex flex-col items-center justify-center gap-1 px-12 py-5 bg-primary text-primary-foreground font-display font-bold rounded-xl pulse-glow hover:brightness-110 transition-all"
             >
-              <ArrowRight size={18} />
-              Vstoupit do pre-launch Discordu
+              <div className="flex items-center gap-2 text-lg">
+                <ArrowRight size={20} />
+                Vstoupit do hry
+              </div>
+              <span className="text-xs font-medium opacity-80 font-body">Zabere ti to jen pár minut</span>
             </a>
           </FadeIn>
         </div>
