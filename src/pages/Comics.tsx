@@ -1,7 +1,15 @@
-import { BookOpen, ArrowRight } from "lucide-react";
+import { BookOpen, ArrowRight, Download, FileText } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 import cover1 from "@/assets/comic-cover-1.jpg";
 import cover2 from "@/assets/comic-cover-2.jpg";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const comics = [
   {
@@ -13,7 +21,7 @@ const comics = [
       "začátek pochopení"
     ],
     img: cover1,
-    pdf: "/docs/komiks-1-probud-hrace.pdf",
+    pdf: "/downloads/probud-hrace-v-sobe.pdf",
   },
   {
     title: "Dr. Wetom: Kód naděje",
@@ -23,7 +31,7 @@ const comics = [
       "první náznaky toho, co se opravdu děje"
     ],
     img: cover2,
-    pdf: "/docs/komiks-2-dr-wetom.pdf",
+    pdf: "/downloads/dr-wetom-kod-nadeje.pdf",
   },
 ];
 
@@ -75,15 +83,47 @@ export default function Comics() {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={comic.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full"
-                  >
-                    <BookOpen size={18} />
-                    Otevřít komiks (PDF)
-                  </a>
+
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <button className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full">
+                        <BookOpen size={18} />
+                        Otevřít komiks
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="glass-card border-primary/40 bg-background/95 max-w-2xl sm:p-10">
+                      <DialogHeader>
+                        <DialogTitle className="font-display text-3xl font-bold mb-4">{comic.title}</DialogTitle>
+                        <div className="aspect-video w-full overflow-hidden rounded-xl mb-6 border border-primary/20">
+                          <img src={comic.img} alt={comic.title} className="w-full h-full object-cover" />
+                        </div>
+                        <DialogDescription className="text-lg text-muted-foreground whitespace-pre-line mb-8">
+                          {comic.desc}
+                          {"\n\n"}
+                          Nyní máte možnost si tento komiks buď prohlédnout přímo v prohlížeči, nebo si jej stáhnout pro pozdější čtení.
+                        </DialogDescription>
+                      </DialogHeader>
+                      <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                        <a
+                          href={comic.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-primary-foreground font-display font-bold rounded-xl hover:brightness-110 transition-all text-center"
+                        >
+                          <FileText size={18} />
+                          Přečíst online
+                        </a>
+                        <a
+                          href={comic.pdf}
+                          download
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 border border-primary/40 text-primary font-display font-bold rounded-xl hover:bg-primary/10 transition-colors text-center"
+                        >
+                          <Download size={18} />
+                          Stáhnout PDF
+                        </a>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </div>
             </FadeIn>
