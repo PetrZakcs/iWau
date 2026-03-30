@@ -10,26 +10,26 @@ import {
 } from "@/components/ui/accordion";
 
 const steps = [
-  { icon: Target, title: "1. Vyber si směr", desc: "Fyzické & duševní zdraví. Finance. Příroda… Vybereš si oblast, ve které chceš posunout svůj život." },
-  { icon: Globe, title: "2. Vstup do světa", desc: "Každé téma má svůj vlastní „svět“. Vybereš si ten, který tě táhne a zajímá." },
-  { icon: Zap, title: "3. Přijmi výzvu", desc: "Každý den dostaneš krátkou výzvu z reálného života. Žádná teorie. → Jdeš a uděláš ji." },
-  { icon: Key, title: "4. Dokaž to", desc: "Nahraješ důkaz. Fotku. Video. Text. Tvůj progres se stává viditelný — pro tebe i pro ostatní." },
-  { icon: Gift, title: "5. Získej odměnu", desc: "Za každou akci získáváš klíče, odemykáš nové úrovně a otevíráš mystery boxy. Nikdy nevíš, co padne. → A přesně proto chceš další." },
-  { icon: Rocket, title: "6. Posuň se dál", desc: "S každým krokem rosteš. Otevíráš nové možnosti. Získáváš status. Odměny, které využiješ v reálném světě. A začínáš hrát na úplně jiné úrovni." },
+  { icon: Target, title: "1. VYBER SI SMĚR", desc: "Fyzické & duševní zdraví. Finance. Příroda… Vybereš si oblast, ve které chceš posunout svůj život." },
+  { icon: Globe, title: "2. VSTUP DO SVĚTA", desc: "Každé téma má svůj vlastní „svět“. Vybereš si ten, který tě táhne a zajímá." },
+  { icon: Zap, title: "3. PŘIJMI VÝZVU", desc: "Každý den dostaneš krátkou výzvu z reálného života. Žádná teorie. → Jdeš a uděláš ji." },
+  { icon: Key, title: "4. DOKAŽ TO", desc: "Nahraješ důkaz. Fotku. Video. Text. Tvůj progres se stává viditelný — pro tebe i pro ostatní." },
+  { icon: Gift, title: "5. ZÍSKEJ ODMĚNU", desc: "Za každou akci získáváš klíče, odemykáš nové úrovně a otevíráš mystery boxy. Nikdy nevíš, co padne. → A přesně proto chceš další." },
+  { icon: Rocket, title: "6. POSUŇ SE DÁL", desc: "S každým krokem rosteš. Otevíráš nové možnosti. Získáváš status. Odměny, které využiješ v reálném světě. A začínáš hrát na úplně jiné úrovni." },
 ];
 
 const team = [
-  { name: "Tomáš", role: "Founder", desc: "Vize, směr a svět, který tahle hra buduje.", quote: "Začal jsem to tvořit ve chvíli, kdy mi došlo, že většina lidí jen sleduje svůj život… místo aby ho opravdu žila.", img: "/tomas.jpg" },
-  { name: "Vítek", role: "Co-founder", desc: "Strategie, systém a rozhodnutí, která drží hru pohromadě.", quote: "Vždycky mě zajímalo, jak nastavit systém tak, aby lidi nejen motivoval… ale skutečně měnil jejich chování.", img: "/vitek.jpg" },
-  { name: "Marián", role: "Co-founder", desc: "Provoz, exekuce a realita každého dne.", quote: "Věděl jsem, že bez změny zůstane vše tak jak je. Tohle je místo, kde se věci opravdu dějí.", img: "/marian.jpg" },
-  { name: "Lucie", role: "Co-founder", desc: "Energie, empatie a spojení s komunitou.", quote: "Každý den vidím, jak moc lidem chybí prostředí, kde můžou růst a být sami sebou. Tohle má být ten prostor.", img: "/lucie.jpg" },
+  { name: "Tomáš", role: "Founder", desc: "Vize, směr a svět, který tahle hra buduje.", quote: "Začal jsem to tvořit ve chvíli, kdy mi došlo, že většina lidí jen sleduje svůj život… místo aby ho opravdu žila.", img: "/tomas.png" },
+  { name: "Vítek", role: "Co-founder", desc: "Strategie, systém a rozhodnutí, která drží hru pohromadě.", quote: "Vždycky mě zajímalo, jak nastavit systém tak, aby lidi nejen motivoval… ale skutečně měnil jejich chování.", img: "/vitek.png" },
+  { name: "Marián", role: "Co-founder", desc: "Provoz, exekuce a realita každého dne.", quote: "Věděl jsem, že bez změny zůstane vše tak jak je. Tohle je místo, kde se věci opravdu dějí.", img: "/marian.png" },
+  { name: "Lucie", role: "Co-founder", desc: "Energie, empatie a spojení s komunitou.", quote: "Každý den vidím, jak moc lidem chybí prostředí, kde můžou růst a být sami sebou. Tohle má být ten prostor.", img: "/lucie.png" },
 ];
 
 const faqs = [
   { q: "Co se stane, když se připojím?", a: "Dostaneš přístup do uzavřené komunity, kde Hru Reality společně stavíme. Uvidíš první verzi systému, první výzvy a budeš u toho, jak se celý projekt formuje od začátku.\n→ Nejde jen o hraní.\n→ Jde o to být u vzniku." },
   { q: "Je hra už hotová?", a: "Ne.\nJsme v pre-launch fázi.\nA právě proto hledáme první hráče, kteří chtějí být u toho.\n→ To, co vznikne, bude do velké míry ovlivněné lidmi, kteří přijdou teď." },
-  { q: "Proč bych se měl/a připojit už teď?", a: "Protože první hráči vždy získají nejvíc. Mají přímý vliv na směr projektu, dostávají early přístup k novým věcem a budují si pozici od úplného začátku.\n→ později už jen vstupuješ do hotové hry" },
-  { q: "Co se bude dít v Discordu?", a: "První signály hry a testování systému, sdílení progresu, společné budování hry, komunikace přímo s týmem.\n→ je to kombinace komunity, hry a backstage vývoje" },
+  { q: "Proč bych se měl/a připojit už teď?", a: "Protože první hráči vždy získají nejvíc. Mají přímý vliv na směr projektu, dostávají early přístup k novým věcem a budují si pozici od úplného začátku.\n→ Později už jen vstupuješ do hotové hry." },
+  { q: "Co se bude dít v Discordu?", a: "První signály hry a testování systému, sdílení progresu, společné budování hry, komunikace přímo s týmem.\n→ Je to kombinace komunity, hry a backstage vývoje." },
   { q: "Musím být aktivní každý den?", a: "Ne.\nAle čím víc se zapojíš, tím víc z toho můžeš získat.\n→ Hra Reality není o dokonalosti.\n→ Je o pohybu." },
   { q: "Co když jen chci sledovat?", a: "Můžeš.\nAle pravděpodobně rychle zjistíš, že je lepší hrát." },
 ];
@@ -54,7 +54,7 @@ export default function Index() {
               </h1>
               <div className="text-lg text-muted-foreground mb-8 max-w-lg space-y-4">
                 <p><strong>Krátké výzvy. Reálný progres. Viditelná změna.</strong></p>
-                <p>Teď budujeme první verzi hry a hledáme 1 000 hráčů, kteří chtějí být u jejího vzniku.</p>
+                <p>Teď budujeme první verzi hry a hledáme <span className="whitespace-nowrap">1 000 hráčů</span>, kteří chtějí být u jejího vzniku.</p>
               </div>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -68,7 +68,7 @@ export default function Index() {
                 </a>
               </div>
               <p className="mt-6 text-xs text-muted-foreground">
-                Pre-launch komunita Discord • První verze pro 1 000 hráčů • Start testování 2026
+                Pre-launch komunita Discord • První verze pro <span className="whitespace-nowrap">1 000 hráčů</span> • Start testování 2026
               </p>
             </div>
           </FadeIn>
@@ -98,15 +98,15 @@ export default function Index() {
               Co se stane po <span className="neon-text">vstupu?</span>
             </h2>
             <div className="max-w-2xl mx-auto text-center space-y-6 text-muted-foreground text-lg">
-              <p>Projdeš krátkým onboardingem (cca 5 minut).<br/>
-              Odemkneš Level 1.<br/>
-              A poprvé uvidíš signály Hry Reality.</p>
+              <p>Projdeš krátkým onboardingem <span className="whitespace-nowrap">(cca 5 minut)</span>.<br />
+                Odemkneš Level 1.<br />
+                A poprvé uvidíš signály Hry Reality.</p>
 
-              <p>Začneš reagovat.<br/>
-              A postupně získáš přístup k testování nového světa.</p>
+              <p>Začneš reagovat.<br />
+                A postupně získáš přístup k testování nového světa.</p>
 
               <div className="p-6 glass-card border-primary/30 mt-8 rounded-2xl">
-                <p className="text-foreground font-medium mb-1">První krok ti zabere 5 minut.</p>
+                <p className="text-foreground font-medium mb-1">První krok ti zabere <span className="whitespace-nowrap">5 minut.</span></p>
                 <p className="text-primary font-bold">Ale může změnit celý tvůj směr.</p>
               </div>
             </div>
@@ -170,9 +170,9 @@ export default function Index() {
                 Kdo stojí za <span className="neon-text">Hrou Reality</span>
               </h2>
               <div className="max-w-2xl mx-auto space-y-4 text-muted-foreground text-lg">
-                <p>Hru Reality netvoří anonymní tým.<br/>Tvoří ji lidé, kteří se rozhodli přestat jen mluvit… a začít tvořit.</p>
-                <p>Začínáme od nuly. Bez investorů. Bez jistoty.<br/>
-                Ale s vizí, že tohle může změnit způsob, jak lidé žijí svůj život.</p>
+                <p>Hru Reality netvoří anonymní tým.<br />Tvoří ji lidé, kteří se rozhodli přestat jen mluvit… a začít tvořit.</p>
+                <p>Začínáme od nuly. Bez investorů. S vírou v to, co budujeme.<br />
+                  A s vizí, že tohle může změnit způsob, jak lidé žijí svůj život.</p>
               </div>
             </div>
           </FadeIn>
@@ -204,7 +204,7 @@ export default function Index() {
             <div className="mt-16 text-center max-w-2xl mx-auto p-8 glass-card border-primary/20">
               <p className="font-display text-lg mb-2">→ Nejsme jen tým.</p>
               <p className="font-display text-lg mb-6 text-primary font-bold">→ Jsme první hráči téhle hry.</p>
-              <p className="text-muted-foreground">Pokud tohle čteš, nejsi tu náhodou.<br/>Možná je čas začít hrát taky.</p>
+              <p className="text-muted-foreground">Pokud tohle čteš, nejsi tu náhodou.<br />Možná je čas začít hrát taky.</p>
             </div>
           </FadeIn>
         </div>
@@ -216,42 +216,42 @@ export default function Index() {
       <section className="py-20 bg-background/50">
         <div className="section-container max-w-4xl">
           <div className="grid md:grid-cols-2 gap-12">
-            <FadeIn>
-              <h2 className="text-2xl sm:text-3xl font-display font-bold mb-6">
-                Proč vzniká Hra Reality <span className="neon-text">právě teď</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground text-lg">
-                <p>Nikdy jsme neměli víc možností.<br/>A nikdy jsme nebyli víc zahlcení.</p>
-                <p>Scrollujeme. Sledujeme. Konzumujeme.<br/>Ale reálně se nikam neposouváme.</p>
-                <p>Sociální sítě odměňují pozornost. Ne změnu.<br/>Vzdělávání dává informace. Ne akci.</p>
-                <div className="pt-2 text-foreground font-medium">
-                  <p>→ Všichni ví, co dělat.</p>
-                  <p>→ Málokdo to dělá.</p>
-                </div>
-              </div>
-            </FadeIn>
-            <FadeIn delay={0.2}>
+            <FadeIn delay={0.2} className="md:order-2">
               <div className="glass-card p-8 border-primary/30 rounded-2xl h-full flex flex-col justify-center">
-                <h3 className="text-xl font-display font-bold mb-4 text-primary">
+                <h3 className="text-2xl font-display font-bold mb-4 text-primary">
                   Proč se připojit právě teď
                 </h3>
-                <p className="text-muted-foreground mb-4">Hra je na začátku.<br/>To znamená jediné:</p>
-                <ul className="text-muted-foreground space-y-2 mb-6">
-                  <li>→ můžeš být u toho od prvního dne</li>
-                  <li>→ ovlivnit, jak bude vypadat</li>
-                  <li>→ a získat náskok před ostatními</li>
+                <p className="text-lg text-muted-foreground mb-4">Hra je na začátku.<br />To znamená jediné:</p>
+                <ul className="text-lg text-muted-foreground space-y-2 mb-6">
+                  <li>→ Můžeš být u toho od prvního dne</li>
+                  <li>→ Ovlivnit, jak bude vypadat</li>
+                  <li>→ A získat náskok před ostatními</li>
                 </ul>
-                <p className="text-foreground font-medium mb-2">První hráči vždy získají nejvíc.</p>
+                <p className="text-xl text-foreground font-bold mb-2">První hráči vždy získají nejvíc.</p>
                 <p className="text-muted-foreground mb-6">Otázka je, jestli budeš mezi nimi. Můžeš být u toho od začátku. Nebo přijít později… a jen sledovat, jak roste.</p>
                 <a
                   href="https://discord.gg/MGnNWkcqQf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex justify-center items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-display font-bold text-sm rounded-xl pulse-glow hover:brightness-110 transition-all mt-auto"
+                  className="w-full inline-flex justify-center items-center gap-2 px-6 py-4 bg-primary text-primary-foreground font-display font-bold text-base rounded-xl pulse-glow hover:brightness-110 transition-all mt-auto"
                 >
                   <ArrowRight size={18} />
                   Vstup do discordu
                 </a>
+              </div>
+            </FadeIn>
+            <FadeIn className="md:order-1">
+              <h2 className="text-2xl sm:text-3xl font-display font-bold mb-6">
+                Proč vzniká Hra Reality <span className="neon-text">právě teď</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground text-lg">
+                <p>Nikdy jsme neměli víc možností.<br />A nikdy jsme nebyli víc zahlcení.</p>
+                <p>Scrollujeme. Sledujeme. Konzumujeme.<br />Ale reálně se nikam neposouváme.</p>
+                <p>Sociální sítě odměňují pozornost. Ne změnu.<br />Vzdělávání dává informace. Ne akci.</p>
+                <div className="pt-2 text-foreground font-medium">
+                  <p>→ Všichni ví, co dělat.</p>
+                  <p>→ Málokdo to dělá.</p>
+                </div>
               </div>
             </FadeIn>
           </div>
@@ -273,7 +273,7 @@ export default function Index() {
             <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, i) => (
                 <AccordionItem key={i} value={`faq-${i}`} className="glass-card border border-border/50 px-6 rounded-xl">
-                  <AccordionTrigger className="text-sm font-medium hover:text-primary py-4">
+                  <AccordionTrigger className="text-lg sm:text-xl font-bold hover:text-primary py-4 text-left">
                     {faq.q}
                   </AccordionTrigger>
                   <AccordionContent className="text-sm text-muted-foreground pb-4 whitespace-pre-line leading-relaxed">

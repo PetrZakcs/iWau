@@ -20,9 +20,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <StarfieldBackground />
       {/* Fixed Nav */}
       <header className="fixed top-0 left-0 right-0 z-50 glass-card border-t-0 border-x-0 rounded-none">
-        <div className="section-container flex items-center justify-between py-2">
-          <Link to="/" className="block group transition-all hover:opacity-80 -ml-2 sm:-ml-4">
-            <img src="/logo.png" alt="Hra Reality Logo" className="h-24 md:h-32 w-auto object-contain scale-[1.6] sm:scale-[2] origin-left" />
+        <div className="section-container flex items-center justify-between h-14 md:h-16 py-0">
+          <Link to="/" className="relative flex items-center h-full group transition-all hover:opacity-80 z-20">
+            <img src="/logo.png" alt="Hra Reality Logo" className="h-36 md:h-48 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 max-w-none" />
           </Link>
 
           {/* Desktop Nav */}
@@ -42,8 +42,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`px-4 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-primary/5 ${
-                    location.pathname === link.to ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                  className={`px-4 py-2 text-base font-bold transition-colors rounded-lg hover:bg-primary/5 ${
+                    location.pathname === link.to 
+                      ? "text-primary" 
+                      : "text-white/90 hover:text-white"
                   }`}
                 >
                   {link.label}
@@ -120,14 +122,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main */}
-      <main className="pt-28 md:pt-40 relative z-10">{children}</main>
+      <main className="pt-14 md:pt-16 relative z-10">{children}</main>
 
       {/* Footer */}
       <footer className="border-t border-border/30 mt-20">
         <div className="section-container py-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
           <div className="flex flex-col gap-2 md:items-start items-center">
             <Link to="/" className="block transition-all hover:opacity-80">
-              <img src="/logo.png" alt="Hra Reality" className="h-20 md:h-32 w-auto object-contain scale-[1.4] md:scale-[1.7] origin-center md:origin-left" />
+              <img src="/logo.png" alt="Hra Reality" className="h-32 md:h-40 w-auto object-contain" />
             </Link>
             <p className="text-xs text-muted-foreground text-center md:text-left mt-0">
               © 2026 Hra Reality. Systém výzev v reálném životě.

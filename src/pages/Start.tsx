@@ -20,14 +20,14 @@ export default function Start() {
               <div className="glass-card-hover p-10 h-full border border-primary/20 flex flex-col bg-background/50">
                 <Target className="text-primary mb-6" size={40} />
                 <h3 className="font-display text-2xl font-bold mb-6">Vize</h3>
-                <p className="text-muted-foreground mb-4">Nevytváříme další aplikaci.</p>
-                <p className="text-foreground font-medium mb-4">→ vytváříme prostředí, ve kterém:</p>
-                <ul className="space-y-4 text-muted-foreground mb-12">
+                <p className="text-muted-foreground mb-4 text-xl">Nevytváříme další aplikaci.</p>
+                <p className="text-foreground font-medium mb-4 text-xl">→ vytváříme prostředí, ve kterém:</p>
+                <ul className="space-y-4 text-muted-foreground mb-12 text-xl">
                   <li>akce = progres</li>
                   <li>progres = status</li>
                   <li>status = reálný důvod pokračovat</li>
                 </ul>
-                <p className="text-primary font-bold mt-auto pt-6 border-t border-border/50 text-xl leading-relaxed">
+                <p className="text-primary font-bold mt-auto pt-6 border-t border-border/50 text-2xl leading-relaxed">
                   Prostředí, které tě přirozeně dostane do pohybu.
                 </p>
               </div>
@@ -38,11 +38,11 @@ export default function Start() {
               <div className="glass-card-hover p-10 h-full border border-primary/20 flex flex-col bg-background/50">
                 <Compass className="text-primary mb-6" size={40} />
                 <h3 className="font-display text-2xl font-bold mb-6">Mise</h3>
-                <p className="text-muted-foreground mb-4 text-lg">
+                <p className="text-muted-foreground mb-4 text-xl">
                   Pomoci lidem přestat jen sledovat svůj život<br />
                   a začít ho reálně žít.
                 </p>
-                <p className="text-muted-foreground mb-4 text-lg mt-auto">Ne teorií.</p>
+                <p className="text-muted-foreground mb-4 text-xl mt-auto">Ne teorií.</p>
                 <p className="text-primary font-bold text-2xl pt-6 border-t border-border/50">
                   → akcí
                 </p>
@@ -54,16 +54,16 @@ export default function Start() {
               <div className="glass-card-hover p-10 h-full border border-primary/20 flex flex-col bg-background/50">
                 <Locate className="text-primary mb-6" size={40} />
                 <h3 className="font-display text-2xl font-bold mb-6">Cíl</h3>
-                <p className="text-muted-foreground mb-6 text-lg">
+                <p className="text-muted-foreground mb-6 text-xl">
                   Vytvořit prostředí, které bude dávat smysl generaci, která přichází.
                 </p>
-                <p className="text-foreground font-medium mb-4">Generaci, která:</p>
-                <ul className="space-y-3 text-muted-foreground mb-8">
+                <p className="text-foreground font-medium mb-4 text-xl">Generaci, která:</p>
+                <ul className="space-y-3 text-muted-foreground mb-8 text-xl">
                   <li>nechce jen obsah</li>
                   <li>nechce jen rady</li>
                   <li>nechce jen „motivaci“</li>
                 </ul>
-                <div className="mt-auto space-y-4 pt-6 border-t border-border/50 text-primary font-bold text-lg">
+                <div className="mt-auto space-y-4 pt-6 border-t border-border/50 text-primary font-bold text-2xl">
                   <p>→ chce něco zažít</p>
                   <p>→ chce něco změnit</p>
                   <p>→ chce být součástí něčeho</p>

@@ -61,12 +61,15 @@ export default function HowItWorks() {
           
           <div className="text-lg text-muted-foreground mb-16 space-y-4">
             <p className="text-foreground font-display font-medium text-xl">Hra Reality není jen systém.<br/>Je to nový způsob, jak přemýšlet o vlastním životě.</p>
-            <p>Většina lidí dnes ví, co by měla dělat.<br/>Ale nedělá to.</p>
-            <p>Scrollujeme. Sledujeme. Učíme se.<br/>Ale reálně se nic nemění.</p>
+            <p>Scrollujeme. Sledujeme. Učíme se.<br/>
+            Ale ve výsledku zůstává všechno stejné.</p>
             <div className="p-6 mt-6 glass-card border-primary/20 bg-background/50 rounded-2xl">
-              <p className="text-primary font-bold mb-2">→ Hra Reality tohle mění.</p>
-              <p>Místo teorie přichází akce.<br/>Místo sledování přichází hra.<br/></p>
-              <p className="font-medium text-foreground mt-4">Podívej se na základní principy:</p>
+              <p className="text-primary font-bold text-xl mb-3">→ Hra Reality tohle obrací.</p>
+              <p className="text-foreground text-lg">
+                Místo teorie přichází akce.<br/>
+                Místo sledování přichází hra.
+              </p>
+              <p className="font-medium text-muted-foreground mt-6">Podívej se na základní principy:</p>
             </div>
           </div>
         </FadeIn>

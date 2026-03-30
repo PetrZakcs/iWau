@@ -13,6 +13,8 @@ import Comics from "./pages/Comics";
 import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +25,7 @@ const App = () => (
       <Analytics />
       <SpeedInsights />
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
