@@ -1,7 +1,7 @@
 import { ArrowRight, Target, Globe, Zap, Key, Gift, Rocket, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import FadeIn from "@/components/FadeIn";
-import heroImg from "@/assets/hero-character.jpg";
+import heroImg from "@/assets/hero-dr-wetom.png";
 import {
   Accordion,
   AccordionContent,

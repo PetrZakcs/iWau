@@ -1,7 +1,9 @@
 import { BookOpen, ArrowRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
-import cover1 from "@/assets/comic-cover-1.jpg";
-import cover2 from "@/assets/comic-cover-2.jpg";
+import cover1 from "@/assets/comic-cover-probud-hrace.png";
+import cover2 from "@/assets/comic-cover-dr-wetom.png";
+
+import { cn } from "@/lib/utils";
 
 const comics = [
   {
@@ -53,14 +55,24 @@ export default function Comics() {
           {comics.map((comic, i) => (
             <FadeIn key={comic.title} delay={i * 0.15}>
               <div className="glass-card-hover overflow-hidden group h-full flex flex-col border border-border/40">
-                <div className="aspect-[3/4] overflow-hidden relative">
-                  <div className="absolute inset-0 bg-primary/10 mix-blend-overlay group-hover:bg-transparent transition-colors z-10" />
+                <div className="aspect-[3/4] overflow-hidden relative bg-background">
+                  {/* Blurred background to fill the object as requested */}
                   <img
                     src={comic.img}
-                    alt={comic.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-40 scale-150 transition-transform duration-700 group-hover:scale-175"
+                    aria-hidden="true"
                   />
+                  {/* Main image - contain to show all logos/text */}
+                  <div className="absolute inset-0 flex items-center justify-center p-2">
+                    <img
+                      src={comic.img}
+                      alt={comic.title}
+                      className="w-full h-full object-contain relative z-10 transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-primary/5 mix-blend-overlay group-hover:bg-transparent transition-colors z-20" />
                 </div>
                 <div className="p-8 flex flex-col flex-1">
                   <h3 className="font-display text-2xl font-bold mb-4">{comic.title}</h3>
@@ -90,6 +102,7 @@ export default function Comics() {
             </FadeIn>
           ))}
         </div>
+
 
         {/* SEKCE 3 - CO POTÉ */}
         <FadeIn delay={0.3}>
