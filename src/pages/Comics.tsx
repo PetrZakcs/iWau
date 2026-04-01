@@ -15,7 +15,7 @@ const comics = [
       "začátek pochopení"
     ],
     img: cover1,
-    pdf: "/downloads/probud-hrace-v-sobe.pdf",
+    pdf: "/downloads/komiks-probud-hrace-v-sobe-komprimovany.pdf",
     aspectRatio: "aspect-[4/5]",
   },
   {
@@ -26,7 +26,7 @@ const comics = [
       "první náznaky toho, co se opravdu děje"
     ],
     img: cover2,
-    pdf: "/downloads/dr-wetom-kod-nadeje.pdf",
+    pdf: "/downloads/komiks-dr-wetom-kod-nadeje-nove.pdf",
   },
 ];
 
