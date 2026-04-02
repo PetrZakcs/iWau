@@ -1,4 +1,4 @@
-import { BookOpen, ArrowRight } from "lucide-react";
+import { BookOpen, ArrowRight, Download } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 import cover1 from "@/assets/comic-cover-probud-hrace.png";
 import cover2 from "@/assets/comic-cover-dr-wetom.png";
@@ -15,7 +15,7 @@ const comics = [
       "začátek pochopení"
     ],
     img: cover1,
-    pdf: "/downloads/komiks-probud-hrace-v-sobe-komprimovany.pdf",
+    pdf: "/downloads/komiks-probud-hrace-v-sobe.pdf",
     aspectRatio: "aspect-[4/5]",
   },
   {
@@ -26,7 +26,7 @@ const comics = [
       "první náznaky toho, co se opravdu děje"
     ],
     img: cover2,
-    pdf: "/downloads/komiks-dr-wetom-kod-nadeje-nove.pdf",
+    pdf: "/downloads/komiks-dr-wetom-kod-nadeje.pdf",
   },
 ];
 
@@ -79,15 +79,25 @@ export default function Comics() {
                     ))}
                   </ul>
 
-                  <a
-                    href={comic.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors w-full"
-                  >
-                    <BookOpen size={18} />
-                    Otevřít komiks
-                  </a>
+                  <div className="grid grid-cols-2 gap-3 mt-auto">
+                    <a
+                      href={comic.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-primary/10 border border-primary/30 text-primary font-display font-bold rounded-xl hover:bg-primary/20 transition-colors text-sm"
+                    >
+                      <BookOpen size={18} />
+                      Prohlédnout
+                    </a>
+                    <a
+                      href={comic.pdf}
+                      download
+                      className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-primary text-primary-foreground font-display font-bold rounded-xl hover:brightness-110 transition-all text-sm shadow-lg shadow-primary/20"
+                    >
+                      <Download size={18} />
+                      Stáhnout
+                    </a>
+                  </div>
                 </div>
               </div>
             </FadeIn>
